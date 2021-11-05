@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <title>Port_folio Assia GHAZI</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#experiences">Expériences</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#presentation">Présentation</a></li>
+
+        </ul>
+      </nav>
+      <h1 class="typedName">Assia GHAZI</h1>
+      <hr>
+      <p class="typedJob">Dév FRONT-END </p>
+      
+    </header>
+
+    <section id="presentation" class="about" >
+      <img src="photoAssia.jpg" alt="Photo de Assia" />
+      <h2>Présentation</h2>
+      <p >
+        Bonjour, je suis Assia GHAZI une
+        <a href="https://www.linkedin.com" target="_blank">développeuse</a>
+        Après des études d'electronique a Universite de FARHAT ABBAS a SETIF en
+        ALGERIE , ainsi qu'une expériences professionelle dans une imprimerie
+        comme infographe, je vients de finir une formation de developpeuse web
+        chez Openclassrooms.
+      </p>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="skills">
+        <div class="skills_HTML">
+          <div style="display: flex">
+            <span style="margin-right: auto">HTML</span>
+            <span class="progress-value">90%</span>
+          </div>
+          <div class="progress-bar100">
+            <div class="progress-bar90"></div>
+          </div>
+        </div>
+        <div class="skills_HTML">
+          <div style="display: flex">
+            <span style="margin-right: auto">CSS</span>
+            <span class="progress-value">80%</span>
+          </div>
+          <div class="progress-bar100">
+            <div class="progress-bar80"></div>
+          </div>
+        </div>
+
+        <div class="skills_HTML">
+          <div style="display: flex">
+            <span style="margin-right: auto">JAVASCRIPT</span>
+            <span class="progress-value">60%</span>
+          </div>
+          <div class="progress-bar100">
+            <div class="progress-bar60"></div>
+          </div>
+        </div>
+        <div class="skills_HTML">
+          <div style="display: flex">
+            <span style="margin-right: auto">REACT</span>
+            <span class="progress-value">40%</span>
+          </div>
+          <div class="progress-bar100">
+            <div class="progress-bar40"></div>
+          </div>
+        </div>
+
+        <div class="skills_HTML">
+          <div style="display: flex">
+            <span style="margin-right: auto">Node js</span>
+            <span class="progress-value">40%</span>
+          </div>
+          <div class="progress-bar100">
+            <div class="progress-bar40"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section des experiences -->
+    <section id="experiences" class="timeLine">
+      <h2>Expérience</h2>
+      <div class="timeLine_vertical">
+        <div style="margin: 50px" class="cercleTriangleBubble">
+          <div id="cercleTriangleBubble" class="cercleTriangleBubble">
+            <div class="bubble bubbleImpair" id="bubble1">
+              <time datetime="2021-09-09">2021 - aujourd'hui</time>
+              <br />
+              <span>Formation Développeuse Web</span>
+              <br />Openclassrooms |Paris <br />
+              8 mois - 7 projets réalisés <br />
+              Compétences développées : Intégration d'une maquette en site web (
+              HTML5 / CSS3 ) Dynamisation d'une page web - animations CSS (
+              HTML5 / SASS ) Optimisation du référencement SEO d'un site web
+              existant ( HTML5 / CSS3 / JavaScript ) Création d'un site de
+              e-commerce ( JavaScript ) Construction d'une API sécurisée pour
+              une application d'avis gastronomiques ( Node JS, Express JS, Mongo
+              DB ) Création d'un réseau social d’entreprise ( React JS, Node JS
+              / Express JS, mySQL )
+            </div>
+          </div>
+
+          <div class="cercleTriangleBubble">
+            <div class="bubble bubblePair" id="bubble2">
+              <time datetime="2021-09-09">2021 - aujourd'hui</time>
+              <br />
+              <span>Développeuse junior</span>
+              <br />Openclassrooms
+            </div>
+          </div>
+
+          <div id="cercleTriangleBubble" class="cercleTriangleBubble">
+            <div class="bubble bubbleImpair" id="bubble3">
+              <time datetime="2021-09-09">2021 - aujourd'hui</time>
+              <br />
+              <span>Développeuse junior</span>
+              <br />Openclassrooms
+            </div>
+          </div>
+
+          <div class="cercleTriangleBubble">
+            <div class="bubble bubblePair" id="bubble4">
+              <time datetime="2021-09-09">2021 - aujourd'hui</time>
+              <br />
+              <span>Développeuse junior</span>
+              <br />Openclassrooms
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- section link cv -->
+    <section class="cv_PDF">
+        <a  href="cv-canva.pdf" title="CV en PDF">CV en PDF
+          <span></span> 
+        </a>
+    </section>
+
+<!-- section contact -->
+<section>
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+     <!-- <form name="contact" method="POST" data-netlify="true"> -->
+      <form name="contact" method="POST" onsubmit="return false">
+      <div class="row">
+        <div class="form-group">
+          <label>Nom</label>
+          <input type="text" name="name" placeholder="Votre nom" required pattern="[a-zA-Z-\.]{3,12}"  />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="mail@serveur.com"
+            required
+
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea
+          name="message"
+          placeholder="Votre message..."
+          required
+          
+        ></textarea>
+      </div>
+      <button class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  
+</section>
+
+
+    <!-- <script type="text/javascript" src="./script.js" ></script> -->
+    <script type="text/javascript" src="./js/typed.min.js"></script>
+    <script type="text/javascript" src="./js/scriptFromScratch.js"></script>
+  </body>
+</html>
