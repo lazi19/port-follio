@@ -1,0 +1,74 @@
+
+
+.form-container {
+  /* width: 70%; */
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 20px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+  /* top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+  margin: 70px auto;
+
+}
+#reused_form{
+  width: 95%;
+  position: relative;
+  margin: 30px auto;
+  text-align: center;
+  
+}
+.form-container input, .form-container textarea, .form-container button {
+  margin: 3px 0;
+  padding: 15px;
+  border: 1px solid #9c9c9c;
+  outline: none;
+  border-radius: 10px;
+  background: transparent ;
+  max-width: 400px;
+  width : 90%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form-container input:hover,.form-container textarea:hover {
+  background: #c3c3c3;
+  transition: 0.4s ease-in-out;
+ 
+}
+.form-container input:hover::placeholder,.form-container textarea:hover::placeholder{
+  color: white;
+}
+.form-container input:focus, .form-container textarea:focus {
+  box-shadow: 0 0 3px #FFF, 0 0 6px #FFF, 0 0 10px rgba(25, 105, 129, 0.4);
+  border-color: transparent;
+  /* background: transparent; */
+}
+.form-container textarea {
+  height: 50px;
+  resize: vertical;
+}
+.form-container textarea::placeholder, .form-container input::placeholder {
+    font-size: 1em;
+}
+.form-container textarea::placeholder {
+  transform: translateY(15px);
+}
+.form-container button {
+  width: 140px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+
+}
+.form-container button:hover {
+  cursor: pointer;
+  background: #c3c3c3;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+.form-container button:active {
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out;
+}
+
